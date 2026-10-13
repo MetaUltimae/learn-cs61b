@@ -1,1 +1,12 @@
+# completed products
 *.class
+out/
+build/          
+
+# IntelliJ IDEA Config
+*.iml
+.idea/          
+
+# system file
+.DS_Store       
+Thumbs.db       
