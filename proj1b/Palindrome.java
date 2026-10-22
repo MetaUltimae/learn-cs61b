@@ -34,7 +34,7 @@ public class Palindrome {
         if (!cc.equalChars(charD.removeFirst(), charD.removeLast())) {
             return false;
         }
-        return isPalindromeHelper(charD,cc);
+        return isPalindromeHelper(charD, cc);
     }
 
     public boolean isPalindrome(String word, CharacterComparator cc) {

@@ -16,4 +16,14 @@ public class TestOffByOne {
         assertFalse(offByOne.equalChars('a', 'A'));
         assertFalse(offByOne.equalChars('c', 'e'));
     }
+
+    @Test
+    public void testCornerCases() {
+        // From the spec clarification: non-alphabetical chars follow numeric
+        // difference, the alphabet does not wrap around, and case matters.
+        assertTrue(offByOne.equalChars('%', '&'));
+        assertTrue(offByOne.equalChars('A', 'B'));
+        assertFalse(offByOne.equalChars('z', 'a'));
+        assertFalse(offByOne.equalChars('a', 'B'));
+    }
 }

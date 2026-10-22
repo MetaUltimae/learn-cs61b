@@ -5,7 +5,7 @@
  * @desciption off-by-N comparators
  *
  */
-public class OffByN implements CharacterComparator{
+public class OffByN implements CharacterComparator {
     private final int N;
 
     public OffByN(int N) {
